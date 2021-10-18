@@ -167,8 +167,8 @@ class SimulatedAnnealing:
         plt.ylabel('Total distance')
         best_historic = np.multiply(self.best_historic, self.DIAGONAL + 1)
         plt.plot(best_historic)
-        plt.show()
         plt.savefig('./img/{}.png'.format('best_historic_curve'))
+        plt.show()
 
 
 simulation = SimulatedAnnealing(100)
